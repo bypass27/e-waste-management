@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>E-Waste Management</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#collection">Collection</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#recycling">Recycling</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Welcome to E-Waste Management</h2>
+                <p>Proper disposal of E-waste is essential for the health of the environment. Join us in managing, collecting, and recycling your electronic waste!</p>
+                <a href="#collection" class="cta-button">Get Started</a>
+            </div>
+        </section>
+
+        <section id="collection">
+            <div class="container">
+                <h2>E-Waste Collection</h2>
+                <form id="collection-form">
+                    <div class="form-group">
+                        <label for="item-type">Item Type:</label>
+                        <select id="item-type" name="item-type" required>
+                            <option value="">Select an item type</option>
+                            <option value="phone">Phone</option>
+                            <option value="laptop">Laptop</option>
+                            <option value="tablet">Tablet</option>
+                            <option value="desktop">Desktop Computer</option>
+                            <option value="printer">Printer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" name="location" placeholder="Enter your location" required>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="impact">
+            <div class="container">
+                <h2>Environmental Impact</h2>
+                <div id="impact-result" class="impact-result"></div>
+            </div>
+        </section>
+
+        <section id="recycling">
+            <div class="container">
+                <h2>E-Waste Recycling</h2>
+                <p>We ensure that your E-waste is recycled safely and efficiently. Our process recycles materials such as plastic, metal, and glass from your electronics.</p>
+                <div class="recycling-stats">
+                    <div class="stat">
+                        <i class="fas fa-recycle"></i>
+                        <span id="recycled-items">0</span>
+                        <p>Items Recycled</p>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-leaf"></i>
+                        <span id="co2-saved">0</span>
+                        <p>CO2 Saved (kg)</p>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="recycling-chart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or need assistance with E-waste collection, reach out to us:</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="03707673736c7177436674627077662d606c6e">[email&#160;protected]</a></p>
+                    <p><i class="fas fa-phone"></i> Phone: +123 456 7890</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 E-Waste Management. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
